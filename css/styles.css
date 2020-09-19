@@ -1,0 +1,12 @@
+#gallery {
+  display: flex;
+  list-style: none;
+}
+
+.gallery-item {
+  margin-right: 20px;
+}
+.gallery-image {
+  width: 400px;
+  height: 250px;
+}
