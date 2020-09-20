@@ -26,7 +26,6 @@ console.log(`В списке ${categoriesNames.length} категории.`);
 
 categoriesNames.forEach((categoriesName) =>
   console.log(
-    `Категория: ${categoriesName.firstElementChild.textContent} 
-Количество элементов: ${categoriesName.lastElementChild.children.length}`
+    `Категория: ${categoriesName.firstElementChild.textContent}\nКоличество элементов: ${categoriesName.lastElementChild.children.length}`
   )
 );
