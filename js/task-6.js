@@ -7,7 +7,7 @@ const inputValidationEl = document.querySelector("#validation-input");
 const onInputBlur = function (event) {
   inputValidationEl.classList.add("invalid");
   if (
-    event.currentTarget.value.length >= Number(inputValidationEl.dataset.length)
+    event.currentTarget.value.length === Number(inputValidationEl.dataset.length)
   ) {
     inputValidationEl.classList.replace("invalid", "valid");
   }
