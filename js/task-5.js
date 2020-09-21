@@ -5,7 +5,7 @@ const helloName = document.querySelector("#name-output");
 const defaultHelloName = "незнакомец";
 
 const onInputChange = function (event) {
-  if (event.currentTarget.value != "") {
+  if (event.currentTarget.value !== "") {
     helloName.textContent = event.currentTarget.value;
   } else {
     helloName.textContent = defaultHelloName;
