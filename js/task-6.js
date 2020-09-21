@@ -9,8 +9,10 @@ const onInputBlur = function (event) {
     event.currentTarget.value.length >= Number(inputValidationEl.dataset.length)
   ) {
     inputValidationEl.classList.add("valid");
+    inputValidationEl.classList.replace("invalid", "valid");
   } else {
     inputValidationEl.classList.add("invalid");
+    inputValidationEl.classList.replace("valid", "invalid");
   }
 };
 inputValidationEl.addEventListener("blur", onInputBlur);
