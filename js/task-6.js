@@ -5,7 +5,6 @@
 
 const inputValidationEl = document.querySelector("#validation-input");
 const onInputBlur = function (event) {
-  console.log(inputValidationEl.dataset.length);
   if (
     event.currentTarget.value.length >= Number(inputValidationEl.dataset.length)
   ) {
