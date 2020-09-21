@@ -5,7 +5,7 @@
 const inputControlEl = document.querySelector("#font-size-control");
 const textTitleEl = document.querySelector("#text");
 
-const onInputChange = function () {
+const onInputChange = function (event) {
   textTitleEl.style.fontSize = event.currentTarget.value + "px";
   console.log(textTitleEl.style.fontSize);
 };
