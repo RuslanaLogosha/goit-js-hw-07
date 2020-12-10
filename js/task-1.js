@@ -180,3 +180,142 @@
 // const r2 = b()
 
 // console.log(r1)
+// function f() {
+//     console.log(typeof(this.toString())); // 123
+// }
+// f.call(123);
+
+// var f = function() {
+//     // Функция f вызывается с помощью простого вызова - f(),
+//     // поэтому this ссылается на глобальный объект
+//     this.x = 5; // window.x = 5;
+    
+//     // В пункте 1.1 также указано, что в самовызывающихся функциях this также ссылается на глобальный объект
+//     (function() {
+//         this.x = 3;  // window.x = 3
+//     })();
+//     console.log(this.x); // console.log(window.x)
+// };
+
+// new f();
+
+// for (var i = 0; i < 3; i++) {
+//   setTimeout(function() { console.log(i); }, 1000 + i);
+// }
+
+// for (var i = 0; i < 3; i++) {
+//   console.log(i)
+// }
+
+// for (var i = 0; i < 3; i++) {
+//   setTimeout(function(i_local) { 
+//     return function() { alert(i_local); } 
+//   }(i), 1000 + i);
+// }
+
+
+// const arr = [10, 12, 15, 21];
+// for (var i = 0; i < arr.length; i++) {
+  
+//     console.log(`The index of this number is: ${i} `);
+  //  console.log(arr.length)
+//}
+// console.log(i)
+// const arr = [10, 12, 15, 21];
+// for (var i = 0; i < arr.length; i++) {
+//   setTimeout(function() {
+//     console.log('The index of this number is: ' + i);
+//   }, 3000);
+// }
+
+// const max = 10;
+
+// for (let i = 0; i <= max; i += 1) {
+//   console.log(i);
+// }
+// console.log(i)
+
+// const arr = [10, 12, 15, 21];
+// for (let i = 0; i < arr.length; i++) {
+//   // using the ES6 let syntax, it creates a new binding
+//   // every single time the function is called
+//   // read more here: http://exploringjs.com/es6/ch_variables.html#sec_let-const-loop-heads
+//   setTimeout(function() {
+//     console.log('The index of this number is: ' + i);
+//   }, 3000);
+// }
+
+// var myVar = 1;
+
+// function setMyVar() {
+//   myVar = 2;
+// }
+
+// setMyVar();
+
+// console.log(myVar);
+
+// var myVar;
+// function setMyVar() {
+//   var myVar = 2;
+// }
+
+// setMyVar();
+
+// console.log(myVar);
+// console.log(myVar);
+// var myVar;
+
+// var myVar = 1;
+// function doSomething() {
+  
+//   if (true) {
+//     console.log(myVar);
+//     var myVar = 2;
+//     console.log(myVar);
+//   }
+// }
+
+// doSomething()
+
+// console.log(varTest);
+// var varTest = 1;
+
+// console.log(letTest);
+// let letTest = 2;
+
+
+// var var1;
+// console.log(var1);
+
+// console.log(var2);
+// var var2 = 1;
+
+
+// let var1;
+// console.log(var1);
+
+// console.log(var2);
+// let var2 = 1;
+
+
+// let mutableVar = 1;
+// const immutableVar = 2;
+
+// mutableVar = 3;
+// immutableVar = 4;
+
+// let a = 3;
+// let b = new Number(3);
+// let c = 3;
+
+// console.log(typeof (a))
+// console.log(a===c)
+
+
+// function bark() {
+//   console.log('Woof!');
+// }
+
+// bark.animal = 'dog';
+// console.log(bark.animal);
